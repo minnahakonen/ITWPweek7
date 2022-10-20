@@ -126,7 +126,7 @@ function create() {
     score += 10;
 
     scoreText.setText("Score: " + score);
-    if (stars.countActive(true) === 0 && strawberries.countActive(true) === 0) {
+    if (stars.countActive(true) === 0) {
       level += 1;
       levelText.setText("Level: " + level);
       stars.children.iterate(function (child) {
